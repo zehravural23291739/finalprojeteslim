@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+    <title>ZEHRA'S KITCHEN</title>
+    <link rel="stylesheet" href="stylee.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ZEHRA'S KITCHEN</div>
+            <ul>
+                <li>
+                    <a href="corba.html">ÇORBA</a>
+                </li>
+                <li>
+                    <a href="arasıcak.html">ARA SICAK</a>
+                    
+                </li>
+                <li>
+                    <a href="Anayemek.html">ANA YEMEK</a>
+
+                </li>
+                <li>
+                    <a href="tatli.html">TATLI</a>
+                </li>
+                <li>
+                    <a href="icecek.html">İÇECEK</a>
+                    
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section-1">
+        <section class="intro">
+            <h1>Hoş Geldiniz!</h1>
+            <p>Ankara'nın en ünlü mutfak lezzetleriyle tanışın.Hoşgeldiniz aramıza </p>
+            <p>çekilişlerden haberdar olmak ve %50 ye varan indirimler ve kampanylardan yarararlnmak için kayıt olabilirsiniz:)</p>
+        </button>
+            <button class="btn-s1" onclick="window.location.href='yeni.html'">KAYIT İÇİN TIKLAYINIZ
+            </button>
+            <button class="btn-s1" onclick="window.location.href='tummenu.html'">MENÜLERİ GÖRMEK İÇİN TIKLAYINIZ
+            </button>
+            </select>
+        </section>
+        
+        <div id=" " style="display: none; text-align: center; margin-top: 20px;">
+            <img src="" alt="Menü Resmi" style="max-width: 100%; height: 50px">
+        </div>
+    </section>
+
+
+    <footer>
+        <p style="text-align: center; background-color: black; color: white; padding: 10px;">
+            Zehra Vural<br>
+            Tel: 75572205702
+        </p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menuList = document.getElementById("menuList");
+            if (menuList.style.display === "none" || menuList.style.display === "") {
+                menuList.style.display = "block";
+            } else {
+                menuList.style.display = "none";
+            }
+        }
+    </script>
+    <div class="comment-section">
+        <h2>Yorum Yap</h2>
+       
+        <form id="commentForm">
+            <input type="text" id="name" placeholder="Adınız" required>
+            <textarea id="comment" placeholder="Yorumunuzu yazın" rows="4" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+        
+       
+        <div id="commentList">
+            <h3>Yorumlar</h3>
+        
+        </div>
+    </div>
+    <script src="yorum.js"></script>
+</body>
+
+</html>
